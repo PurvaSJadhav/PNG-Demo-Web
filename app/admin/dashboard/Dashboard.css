@@ -1,0 +1,319 @@
+.dashboard {
+  display: flex;
+  font-family: "Segoe UI", sans-serif;
+  background: #F7F2E9;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #c52c2d;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+}
+
+.profile {
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 15px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0b2c4d;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.profile h2 {
+  margin: 5px 0;
+  font-size: 30px;
+}
+
+.profile p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.menu {
+  text-align: left;
+}
+
+.menu div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.menu div:hover {
+  background: #D7A260;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+  margin-left: 20px;
+}
+
+
+.cardRow {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.menu a {
+  text-decoration: none;  /* underline hat jayegi */
+  color: inherit;         /* text ka color white hi rahega */
+}
+
+.menu a:visited {
+  color: inherit;         /* visited hone ke baad bhi blue/purple nahi hoga */
+}
+
+.menu a:hover {
+  text-decoration: none;  /* hover pe bhi underline nahi aayegi */
+}
+
+
+/* Stat Cards */
+.statCard {
+  flex: none;            
+  width: 260px;        /* width chhoti */
+  height: 150px;       /* height chhoti */
+  background: white;
+  border-radius: 12px;
+  padding: 15px;       /* andar ka padding kam */
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+}
+
+.statHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;   /* thoda aur chhota */
+  color: #444;
+}
+
+.statCard h2 {
+  font-size: 36px;   /* number bada hi rahega */
+  font-weight: 600;
+  color: #222;
+  margin-top: -2px;
+}
+
+/* Special primary card */
+.statPrimary {
+  background: linear-gradient(to right, #FF7F50, #fbdbdb);
+  color: white;
+}
+
+.statPrimary h2 {
+  color: black;
+}
+
+.statPrimary .statHeader {
+  color: black;
+}
+
+
+
+/* Info + Progress */
+.mainRow {
+  display: flex;
+  gap: 20px;
+}
+
+.infoSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.infoBox {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 14px;
+  box-shadow: 0 3px 8px #D9D9D9;
+  transition: 0.3s;
+  width: 97%;              /* width kam kiya */
+  margin: 5px;
+  position: relative;
+  margin-left: 15px;
+  border: 2px solid #D9D9D9;
+}
+
+.infoBox:hover {
+  transform: translateY(-3px);
+}
+
+.cardclass{
+  margin-left: 20px !important;
+}
+
+/* Remove margin hacks */
+.bottomRow {
+  margin-right: 0 !important;
+}
+.bottomRow1 {
+  margin-right: 0 !important;
+}
+
+/* Force Route and Car in vertical alignment */
+.row p {
+  flex: 1;                /* equal width */
+}
+
+.row {
+  color: black;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* top se align hoga */
+}
+
+/* New rule for Route + Car alignment */
+.row p:nth-child(2) {
+  text-align: left; /* right side bhi neat rahega */
+}
+
+.trackRight {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+.trackBtn {
+  background: #c52c2d;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.trackBtn:hover {
+  background: #c52c2d;
+}
+
+/* Progress Box */
+/* Analytics wrapper to move heading outside box */
+.analyticsWrapper {
+  flex: 1;
+  margin-right: 55px;
+}
+
+.progressBoxNew {
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+  margin-left: 15px;
+  padding: 30px;   /* ⬆ padding badhayi */
+  width: 560px;    /* ⬆ card width */
+  height: 300px;   /* ⬆ card height */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+  margin-left: 5px;
+}
+
+.chartLegendRow {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-left: 25px;
+  white-space: nowrap; /* sentences wrap nahi honge */
+}
+
+.chartLegendRow div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.emptyCard {
+  margin-top: 20px;
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  height: 122px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
+  font-size: xx-large !important;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+
+.dot-orange { background: #f97316; }
+.dot-green  { background: #22c55e; }
+.dot-blue   { background: #3b82f6; }
+
+
+
+.sectionTitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 18px;
+  margin-left: 15px;
+}
+
+.sectionTitle1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 13px;
+  margin-left: 20px;
+}
