@@ -13,7 +13,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-const addVehicle = ({ vehicles = [], loading = false }) => {
+const AddVehicle = ({ vehicles = [], loading = false }) => {
   const router = useRouter();
 
   const logoutHandler = async () => {
@@ -191,4 +191,4 @@ const addVehicle = ({ vehicles = [], loading = false }) => {
   );
 };
 
-export default addVehicle;
+export default AddVehicle;

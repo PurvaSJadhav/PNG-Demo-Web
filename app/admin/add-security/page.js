@@ -13,7 +13,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-const addSecurity = ({ vehicles = [], loading = false }) => {
+const AddSecurity = ({ vehicles = [], loading = false }) => {
   const router = useRouter();
 
   const logoutHandler = async () => {
@@ -179,4 +179,4 @@ const addSecurity = ({ vehicles = [], loading = false }) => {
   );
 };
 
-export default addSecurity;
+export default AddSecurity;

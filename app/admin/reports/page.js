@@ -13,7 +13,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-const report = ({ vehicles = [], loading = false }) => {
+const Report = ({ vehicles = [], loading = false }) => {
   const router = useRouter();
 
   const logoutHandler = async () => {
@@ -172,4 +172,4 @@ const report = ({ vehicles = [], loading = false }) => {
   );
 };
 
-export default report;
+export default Report;

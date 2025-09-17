@@ -18,6 +18,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import { useRouter } from "next/navigation";
 
 const Dashboard = () => {
+  const router = useRouter();
   const logoutHandler = async () => {
     try {
       await fetch("/api/admin/logout", { method: "POST" });
